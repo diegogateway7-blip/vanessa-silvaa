@@ -6,9 +6,9 @@ import { ProfileHeader } from '@/components/content-cove/profile-header';
 
 export default function Home() {
   return (
-    <div className="bg-background min-h-screen font-body">
+    <div className="bg-card min-h-screen font-body">
       <ProfileHeader />
-      <main className="container mx-auto max-w-4xl px-0 sm:px-4 bg-card rounded-b-lg">
+      <main className="container mx-auto max-w-4xl px-0 sm:px-4">
         <ProfileCard />
         <div className="px-4">
           <ExclusiveContent />
