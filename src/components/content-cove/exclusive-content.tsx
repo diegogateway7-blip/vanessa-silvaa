@@ -194,15 +194,17 @@ export function ExclusiveContent() {
   };
 
   return (
-    <section className="mt-12">
-      <h2 className="text-2xl font-bold mb-4 font-headline">Meus Packs Exclusivos</h2>
+    <section className="mt-8">
       <Tabs defaultValue="all" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 md:w-auto md:inline-flex mb-2">
-          <TabsTrigger value="all">Todos</TabsTrigger>
-          <TabsTrigger value="photos">📸 Fotos</TabsTrigger>
-          <TabsTrigger value="videos">🎥 Vídeos</TabsTrigger>
-        </TabsList>
-        <div className="bg-card p-4 sm:p-6 rounded-xl shadow-lg">
+        <div className="flex justify-between items-center mb-4">
+            <h2 className="text-2xl font-bold font-headline">Meus Packs Exclusivos</h2>
+            <TabsList className="grid grid-cols-3 md:w-auto md:inline-flex mb-0">
+                <TabsTrigger value="all">Todos</TabsTrigger>
+                <TabsTrigger value="photos">📸 Fotos</TabsTrigger>
+                <TabsTrigger value="videos">🎥 Vídeos</TabsTrigger>
+            </TabsList>
+        </div>
+        <div>
           <h3 className="text-lg font-semibold mb-4">Conteúdo exclusivo</h3>
           <TabsContent value="all" className="mt-0">
             <MediaGrid items={mediaItems} showMore onItemClick={handleItemClick} />
